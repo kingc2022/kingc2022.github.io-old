@@ -4,33 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Cyq的主页</title>
+    <title>Cyq的网站</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="bootstrap-icons/book.svg">
     <style>
         body {
             background-color: #B5B1F6;
         }
-        
-        .zhuye {
+        .con {
             border-radius: 12px;
             background-color: #E3DDFF;
-        }
-
-        .link {
-            text-decoration: none;
-            color: #0d6efd;
         }
     </style>
     <script type="text/javascript">
         function isIE() {
-            if (!!window.ActiveXObject || "ActiveXObject" in window) {
-                return true;
-            } else {
-                return false;
-            }
+            return !!window.ActiveXObject || "ActiveXObject" in window;
         }
-        if (isIE() == true) {
+        if (isIE() === true) {
             window.location.href = "https://kingc2022.github.io/notsupportie";
         }
     </script>
@@ -108,10 +98,11 @@
             </div>
         </div>
     </nav>
-    <div class="text-center container p-5 my-5 zhuye">
+    <div class="text-center container p-5 my-5 con">
         <div class="pt-5"></div>
-<!--        <div class="pt-5"></div>-->
-        <h1 class="display-3 text-primary">Cyq的主页</h1>
+        <h1 class="display-3 text-primary">Cyq的网站</h1>
+        <div class="pt-2"></div>
+        <h2 class="display-4 text-light text-bg-success">考的全会，蒙的全对！</h2>
         <div class="pt-5"></div>
         <div style="text-align: left;">
             <p class="lead text-dark text-break">
@@ -134,7 +125,7 @@
         </li>
     </ul>
 </body>
-<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
 </html>

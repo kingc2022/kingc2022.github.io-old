@@ -7,18 +7,9 @@
     <title>合成大西瓜</title>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="../../bootstrap-icons/book.svg">
-    <script type="text/javascript">
-        function mogai() {
-            window.location.href = "mogai/";
-        }
-
-        function normal() {
-            window.location.href = "normal/";
-        }
-    </script>
     <style>
         body {
-            background-color: #FFE79D;
+            background-color: #B5B1F6;
         }
     </style>
 </head>
@@ -95,19 +86,20 @@
             </div>
         </div>
     </nav>
-    <div class="text-center container p-5 my-5 text-white" style="border-radius: 12px;background-color: #FF5546;">
-        <h1 class="display-3 text-info">合成大西瓜 - 选择游戏版本</h1>
+    <div class="text-center container p-5 my-5 text-white" style="border-radius: 12px;background-color: #E3DDFF;">
+        <h1 class="display-5 text-primary">合成大西瓜 - 选择游戏版本</h1>
         <div class="pt-4"></div>
         <img src="normal/res/share.jpg" class="rounded img-fluid">
         <br>
         <div class="pt-4"></div>
-        <button class="btn btn-lg btn-primary" onclick="normal()">合成大西瓜</button>
-        <div class="pt-4"></div>
-        <button class="btn btn-lg btn-primary" onclick="mogai()">魔改版合成大西瓜</button>
+        <div class="btn-group btn-group-lg">
+            <a class="btn btn-outline-primary" href="normal/">合成大西瓜</a>
+            <a class="btn btn-outline-primary" href="mogai/">魔改版合成大西瓜</a>
+        </div>
         <div class="pt-2"></div>
     </div>
 </body>
-<script type="text/javascript" src="../../jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../jquery.min.js"></script>
 <script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
 
 </html>
