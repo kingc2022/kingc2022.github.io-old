@@ -5,8 +5,8 @@
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
-      typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-          (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+  typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
 })(this, (function (Popper) { 'use strict';
 
   function _interopNamespace(e) {
@@ -297,8 +297,8 @@
     let called = false;
 
     const handler = ({
-                       target
-                     }) => {
+      target
+    }) => {
       if (target !== transitionElement) {
         return;
       }
@@ -2294,9 +2294,9 @@
     }
 
     _selectMenuItem({
-                      key,
-                      target
-                    }) {
+      key,
+      target
+    }) {
       const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._menu).filter(element => isVisible(element));
 
       if (!items.length) {
@@ -5163,17 +5163,17 @@
       switch (event.type) {
         case 'mouseover':
         case 'mouseout':
-        {
-          this._hasMouseInteraction = isInteracting;
-          break;
-        }
+          {
+            this._hasMouseInteraction = isInteracting;
+            break;
+          }
 
         case 'focusin':
         case 'focusout':
-        {
-          this._hasKeyboardInteraction = isInteracting;
-          break;
-        }
+          {
+            this._hasKeyboardInteraction = isInteracting;
+            break;
+          }
       }
 
       if (isInteracting) {
